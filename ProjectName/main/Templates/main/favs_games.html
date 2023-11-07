@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
+    <head> 
+    <title> Favorites games</title>
+    <style>
 
-h3 {
-  color: red;
-  }
-
-.title {
-  font-size: 60px;
-    color: orange;
+h1{
+            border-style: double;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+            margin: 50px 40px 20px 10px;
+            background-color: rgb(206, 165, 197) ;
+            color: rgb(63, 8, 63);
+            text-align: center;
         }
 
+        p{
+            color: rgb(43, 116, 226);
+        }
 
-</style>
+        img{
+            width: 150px;
+            height: 150px;
 
-</head>
-<body>
-  <div  class="gemes">
-  {{gemes}}
+        }
+    </style>
+    </head>
 
-  <h3 class="title">Favorite games</h3>
-        ul>
-            <li>GTA V</li>
-            <li >Project Makeover</li>
-            <li >bowling</li>
-        </ul>
-  </div>
+    <body>
+        
+        <div class="fava_games_view">
+          <h1> My favories Games </h1>
+          <br>
+            <p>1.GTA V</p>
+            <img src="https://www.tech-wd.com/wd/wp-content/uploads/2013/10/GTA-V-main.jpg" alt=" game1"/>
+            <br>
+            <p>2.Project Makeover </p>
+            <img src="https://static.wikia.nocookie.net/projectmakeover/images/0/08/Site-background-dark/revision/latest?cb=20220918113300" alt="game2"/>
+             <br>
+             <p>3.bowling</p>
+            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000025028/b2aab014fa28cebd8c3e96f6db6909ed265b2891a7b9108a439598b7ccf9467b" alt="game3"/>
+            {{gemes}}
+        </div>
 
-</body>
+    </body>
 </html>
