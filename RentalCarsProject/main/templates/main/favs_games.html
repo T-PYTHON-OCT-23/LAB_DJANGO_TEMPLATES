@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Favorite Games </title>
+
+    <style>
+        body {
+            background-color:rgb(201, 220, 238);
+            background-repeat: no-repeat;
+          
+        }
+        .header{
+            color:black;
+            font-size: 70px;
+        }
+
+
+        .pass{
+            color:black;
+            position: static;
+            font-size: 50px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <h1 class="header"> Favorite Games :</h1>
+
+    <div class="pass">
+        <ul>
+            {% for game in games %}
+
+                <li> {{game}} </li>
+
+            {% endfor %}
+
+    </ul>
+    </div>
+    
+
+    <img src="https://image.api.playstation.com/cdn/EP0002/CUSA07399_00/bPXMfRCtjGgvIS0BxOWqVsn94MAMLMkE.png" style="width: 200px; height: auto;"> 
+    <img src="https://image.winudf.com/v2/image1/bm8uZGlydHliaXQuZnVucnVuX3NjcmVlbl8wXzE1NjY4OTIyODBfMDIz/screen-0.webp?fakeurl=1&type=.webp" style="width: 200px; height: auto;">
+    <img src="https://preview.redd.it/tj7zl3owakm51.png?auto=webp&s=04752355d4f49b6c5633ddb4242def8aa4d2a2f6" style="width: 200px; height: auto;">
+
+
+</body>
+
+
+</html>
