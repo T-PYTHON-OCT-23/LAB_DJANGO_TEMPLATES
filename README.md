@@ -8,7 +8,7 @@
   - this is the homepage . It should have an image (choose any image) , a heading (h1) and a paragraph about the website.
   - Also , using <UL> / <LI> elements and <a> , add links to each other page in your website.
   - Use Google Fonts to set the font you see in the screenshot . The font name is Ubuntu .
-  - Use the image included in this repo.
+  - Use the following url for the image : `https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg`
   - The page should look like the following:
 <div>
   <img src="" style="width:100%;" />
