@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <style>
+        
+        #font{
+        font-family: 'Ubuntu', sans-serif;
+        
+    }
+   
+    img {
+ 
+ border-radius: 8px;
+ width: 200px;
+ height: 200px;
+ margin-left: 30px;
+ margin-right: 20px;
+}
+.css-box2 {
+    
+    margin-left: 0px;
+    margin-right: 100px;
+    
+}
+a{
+    margin: 15px;
+}
+.footer li {
+  display: inline-block;
+
+}
+    </style>
+</header>
+<body style="background-color:rgb(234, 225, 225);">
+    <h1 id = "front">Favorite Games</h1>
+    {% for games in games %}
+    <hr>
+    <br>
+      {% if games == "pubg"%}
+       {{games}}:
+       <br>
+       <img src="https://play-lh.googleusercontent.com/uqq6a-fHayQxsNQkxB9ZZXag8N7Du5mOEKcScr9yltHqx3RKgCdr9VJHKGO2vY_GUe0" alt="cars" />
+       <br>
+       {% elif games == "crash"%}
+       <br>
+       {{games}}:
+       <br>
+        <img src = "https://www.cbc.ca/kids/images/tinycrashfighters_thumbnail.jpg" alt = "games" />
+       <br>
+       {% elif games == "fortnite"%}
+       <br>
+       {{games}}:
+       <br>
+       <img src = "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg" alt = "games" />
+       {% endif %}
+    {% endfor %}
+       <hr>
+
+<div class = "css-box2">
+    <ul class = "footer li">
+        <h2>Our Services</h2>
+        <li> <a href="/">Home</a></li>
+            
+        <li><a href="/today/">Today</a></li>
+            
+        <li><a href="/random/password/">Password Generator</a></li>
+
+        <li><a href="/favs/games/">Favorite games</a></li>
+    </ul>
+</div> 
+</body>
+</html>
