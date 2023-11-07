@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Ubuntu;
+            background-color: #f0f0f0;
+            margin: 10px; /* Add 'px' unit to margin and padding */
+            padding: 10px; /* Add 'px' unit to margin and padding */
+        }
+        
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Correct the box-shadow value */
+            text-align: left;
+        }
+        
+        h1, h3, p {
+            font-family: Ubuntu; /* Correct the 'family' to 'font-family' */
+            text-align: left;
+            margin: 0;
+            padding: 5px;
+        }
+        
+        .gold-star {
+            color: gold;
+        }
+        
+        .expand-paragraph {
+            display: none;
+        }
+        
+        .expand-paragraph-label {
+            text-align: left;
+            display: block;
+            cursor: pointer;
+            color: #0070cc;
+            text-decoration: underline;
+        }
+        
+        #expand-paragraph:checked ~ .expand-paragraph-label + .expand-paragraph {
+            display: block;
+        }
+        
+        #expand-paragraph:checked ~ .expand-paragraph-label {
+            display: none;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            color: #0070cc;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        ul li a:hover {
+            color: #ff6600;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5%; /* You can adjust this value to control the amount of rounding */
+        }
+
+        footer {
+            text-align: left; /* Align text to the left */
+            background-color: #fff;
+            padding: 10px;
+            margin: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RentalCar.com: Car Rentals - Special Offers Online</h1>
+        <h3>Rating 5/5 <span class="gold-star">★</span></h3>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" alt="Website Image">
+        <p>Embark on a thrilling journey with RentalCar.com's exquisite fleet of vehicles. From sleek sports cars that hug the curves of the open road to spacious SUVs designed for family adventures, our collection is your gateway to unforgettable experiences. Choose from a selection of meticulously maintained cars that promise comfort, style, and unmatched performance.</p>
+        <input type="checkbox" id="expand-paragraph" class="expand-paragraph">
+        <label for="expand-paragraph" class="expand-paragraph-label">Learn More</label>
+        <p class="expand-paragraph">Your next adventure awaits, and it begins with the perfect car at RentalCar.com.</p>
+    </div>
+    <footer>
+        <!-- Navigation links to other pages -->
+        <h3>Our service</h3>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/today/">Today</a></li>
+            <li><a href="/favs/games/">Games</a></li>
+            <li><a href="/random/password/">Random Password</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

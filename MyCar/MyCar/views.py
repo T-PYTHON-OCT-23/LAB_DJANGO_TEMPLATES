@@ -49,3 +49,8 @@ def today(request):
     context = { "iP":ip().get('ip'),
                "DATE":datetime.datetime.now()}
     return render(request,'main/today.html',context)
+
+
+
+def home(request):
+    return render(request,'main/home.html')
