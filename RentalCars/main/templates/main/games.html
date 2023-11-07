@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Favorite Games</title>
+        <style>
+            h1{
+                text-align: center;
+                background-color:rgba(22, 2, 2, 0.336);
+                color: rgb(141, 77, 65);
+                border-radius: 15%;
+                box-shadow: 0px 15px 15px rgba(0,0,0,0.3);
+                margin: 5% 5% 2% 5% ;
+            }
+            .dis{
+                width: 80%;
+            padding: 10px;
+            margin: 0px auto;
+            border: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 0px 15px 15px rgba(0,0,0,0.3);
+            margin-top:20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+            
+            .dis li{
+            text-align: center;
+            
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            object-fit: cover;
+            
+            }
+            .dis img{
+                border-radius: 10%;
+            }
+            .page_style2{
+                text-align: center;
+            }
+        
+        </style>
+
+    </header>
+    <body>
+        <div class="dis">
+        <h1>Favorite Games</h1>
+        <ul>
+            {% for game in favorite_games %}
+                <li>
+                    <img src="{{ game.image_url }}" alt="{{ game.title }}">
+                    <p>{{ game.title }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        {{games}}
+    </div>
+    <div class="page_style2">
+        <h2 style= "font-family: 'Inter', sans-serif;"><b>Our services: </b></h2>
+    
+        <a href="{% url 'main:home_page' %}" style="padding-left: 15px; padding-right: 15px;">Home</a>
+        <a href="{% url 'main:date_today_view' %}" style="padding-left: 15px; padding-right: 15px;">Today</a>
+        <a href="{% url 'main:password_view' %}" style="padding-left: 15px; padding-right: 15px;">Password Generetor</a>
+        <a href="{% url 'main:list_games_view' %}" style="padding-left: 15px; padding-right: 15px;">Favorite Games</a>
+    </div>
+    </body>
+</html>
