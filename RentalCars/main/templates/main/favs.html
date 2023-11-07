@@ -1,0 +1,12 @@
+
+  <h1>My Favorite Games</h1>
+
+  <ul>
+    {% for game in games %}
+      <li>
+        <h3>{{ game.title }}</h3>
+        <img src="{{ game.image }}" alt="{{ game.title }}" style="width: 100px; height: 100px;">
+      </li>
+    {% endfor %}
+  </ul>
+
