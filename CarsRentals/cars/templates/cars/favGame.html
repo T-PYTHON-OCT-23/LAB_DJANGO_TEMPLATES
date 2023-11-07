@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Favorite Games </title>
+</head>
+<style>
+    * {
+        background-color: rgb(225, 209, 190);
+    }
+
+    title {
+        margin: 20px;
+        width: 100%;
+        
+    }
+
+    .Games-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 20px;
+
+
+    }
+
+    .Games {
+        margin: 30px auto;
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 25px 3px rgb(158, 157, 157, 5), -5px -5px 30px 3px rgb(129, 129, 129, 5);
+        transition: 0.4s;
+    }
+
+    .Game-image {
+        width: inherit;
+        height: inherit;
+        border-radius: 20px;
+    }
+
+    .Game-image img {
+        width: inherit;
+        height: inherit;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .Game-name {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: black;
+        font-size: 30px;
+        margin-top: -80px;
+        border-radius: 20px;
+    }
+
+    .Games:hover {
+        transform: scale(0.9, 0.9);
+        box-shadow: 1px 1px 25px 3px rgb(158, 157, 157, 5), -5px -5px 30px 3px rgb(129, 129, 129, 5);
+    }
+</style>
+
+<body>
+    <h1 id="title"> My Favorite Games is: </h1>
+    <br>
+    <div class="Games-list">
+        <div class="Games">
+            <div class="Game-image"> <img
+                    src="https://cdn6.aptoide.com/imgs/e/b/8/eb894a7c1232fd6359d34b4f72e9ff01_icon.png">
+            </div>
+            <div class="Game-name">
+                <p> Hay Day </p>
+            </div>
+        </div>
+
+        <div class="Games-list">
+            <div class="Games">
+                <div class="Game-image"> <img src="https://m.media-amazon.com/images/I/51MAJsPLzlL.png">
+                </div>
+                <div class="Game-name">
+                    <p> Ludo Star </p>
+                </div>
+            </div>
+
+            <div class="Games-list">
+                <div class="Games">
+                    <div class="Game-image"> <img
+                            src="https://play-lh.googleusercontent.com/YrCNaDzpHFs4VO6gQmFFjFCMWi3UWBC1qWuhMe4rlb4e1JjhGtzpCb1VDS5eQ4Rl8W4">
+                    </div>
+                    <div class="Game-name">
+                        <p> Cooking Fever </p>
+                    </div>
+                </div>
+
+                <div class="Games-list">
+                    <div class="Games">
+                        <div class="Game-image"> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5QSFBdOJ_q3Rv9DcSNyzCKD08tDwYEhuqiA&usqp=CAU">
+                        </div>
+                        <div class="Game-name">
+                            <p> Sudoku </p>
+                        </div>
+                    </div>
+                </div>
+
+</body>
+
+</html>
