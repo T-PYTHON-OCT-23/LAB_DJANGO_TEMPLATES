@@ -7,11 +7,10 @@
 ### `/`
   - this is the homepage . It should have an image (choose any image) , a heading (h1) and a paragraph about the website.
   - Also , using <UL> / <LI> elements and <a> , add links to each other page in your website.
-  - Use Google Fonts to set the font you see in the screenshot . The font name is Ubuntu .
   - Use the following url for the image : `https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg`
   - The page should look like the following:
 <div>
-  <img src="" style="width:100%;" />
+  <img src="https://github.com/T-PYTHON-OCT-23/LAB_DJANGO_TEMPLATES/blob/main/Screenshot%202023-11-07%20at%2011.14.02%20AM.png?raw=true" style="width:100%;" />
 </div>
     
 ### `today/`
