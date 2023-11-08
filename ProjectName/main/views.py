@@ -38,4 +38,4 @@ def fava_games_view(request : HttpRequest):
    "gemes": gemes
    }
 
-   return render(request,'main/favs_gemes.html', context)
+   return render(request,'main/favs_games.html', context)
