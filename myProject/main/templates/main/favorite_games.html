@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Favorite Games</title>
-</head>
-<body>
-    <h1> My Favorite Games: </h1>
-    <ol>
-        {% for games in favorite_games_list %}
-            <div>
-            <li>{{ games.title}}</li>
-            <img src="{{games.image_url}}" width="1000px"/>
-            </div>
-    
-        {% endfor %}
-    </ol>
+{% extends 'main/base.html' %}
+{% block title %}Favorite Games{% endblock%}
 
-    <h2><b>Our services: </b></h2>
-    <a href="{% url 'home' %}" style="padding-left: 15px; padding-right: 15px;">Home</a>
-    <a href="{% url 'today' %}" style="padding-left: 15px; padding-right: 15px;">Today</a>
-    <a href="{% url 'random_password' %}" style="padding-left: 15px; padding-right: 15px;">Password Generetor</a>
-    <a href="{% url 'favorite_games' %}" style="padding-left: 15px; padding-right: 15px;">Favorite Games</a>
-</body>
-</html>
+{% block content %}
+<h1> My Favorite Games: </h1>
+<div class="games-container">
+
+    {% for games in favorite_games_list %}
+        <div class="game-card">
+            {{ games.title }}
+            
+            <img src="{{games.image}}" class="game-img"/>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

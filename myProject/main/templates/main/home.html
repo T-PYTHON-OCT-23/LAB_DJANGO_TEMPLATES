@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Homepage</title>
-    <style>
-        body    {
-            padding:10px,100px;
-            justify-content: center; 
-            align-items:center; 
-            margin:10px,100px;
-        }   
-        .box-with-shadow {
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        .image-container {
-            margin:10px;
-            height:300px;
-            overflow: hidden; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+{% extends 'main/base.html' %}
 
-                }
+        {% block title %}Home{% endblock%}
 
-        .cars-image {
-            width:100%;
-            height:100%;
-            object-fit:cover;
-            border-radius: 20px; 
-        }
-    </style>
-</head>
-<body>
-        <div style="border:hidden; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px" class="box-with-shadow">
+        {% block content %}
+
+        <div style="border:hidden; margin:30px;" class="box-with-shadow">
             <h1 style="font-family: 'Inter', sans-serif; margin:20px; padding:20px">Welcome to My Website</h1>
             <p style="color:gray; margin:20px; padding:20px">Rating 5/5 <span style="color: #FFD700;">★</span></p>
             <div class="image-container" style="margin:20px; padding:20px">
@@ -43,10 +14,4 @@
             <a href="" style="margin:20px; padding:20px">Learn More...</a>
         </div>
     
-        <h2 style= "font-family: 'Inter', sans-serif;"><b>Our services: </b></h2>
-            <a href="{% url 'home' %}" style="padding-left: 15px; padding-right: 15px;">Home</a>
-            <a href="{% url 'today' %}" style="padding-left: 15px; padding-right: 15px;">Today</a>
-            <a href="{% url 'random_password' %}" style="padding-left: 15px; padding-right: 15px;">Password Generetor</a>
-            <a href="{% url 'favorite_games' %}" style="padding-left: 15px; padding-right: 15px;">Favorite Games</a>
-</body>
-</html>
+          {% endblock %}

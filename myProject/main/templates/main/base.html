@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+<nav>
+    <a href="{% url 'home' %}" style="padding-left: 15px; padding-right: 15px;">Home</a>
+    <a href="{% url 'today' %}" style="padding-left: 15px; padding-right: 15px;">Today</a>
+    <a href="{% url 'random_password' %}" style="padding-left: 15px; padding-right: 15px;">Password Generetor</a>
+    <a href="{% url 'favorite_games' %}" style="padding-left: 15px; padding-right: 15px;">Favorite Games</a>
+</nav>
+<body>
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>
+        <h5>All rights reserved for khamis.co</h5>
+    </footer>
+</body>
+</html>

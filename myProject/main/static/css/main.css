@@ -1,0 +1,53 @@
+body    {
+    font-family: 'Ubuntu', sans-serif;
+    padding:10px,100px;
+    justify-content: center; 
+    align-items:center; 
+    margin:10px,100px;
+}   
+nav {
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    justify-content: left; 
+}
+.games-container {
+    padding: 1em;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.game-card{
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:column
+}
+.game-img {
+    padding: 2em;
+    width: 30%;
+}
+.box-with-shadow {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.image-container {
+    margin:10px;
+    height:300px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        }
+
+.cars-image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 20px; 
+}
