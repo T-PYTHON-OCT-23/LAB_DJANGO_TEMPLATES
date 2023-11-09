@@ -1,47 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Favorite Games</title>
-<h1>My Favorite Games: </h1>
-<style>
-    body{
-        background-color:rgb(160, 160, 160);
-        margin-left: 50px;
-    }
-    h1{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    h2{
-        margin-left: 30px;
-    }
-</style>
+{% extends 'Car/base.html'%}
 
-</head>
+    {%block title%} Favorite Games {%endblock%}
 
-<body>
+
+
+{%block contant%}
+<h2>My Favorite Games </h2>
+<div class="baseGame">
     {%for game in games%}
-        {% if game == "Chess"%}
-            <h2>1-{{game}}</h2>
-            <br>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/ChessSet.jpg/800px-ChessSet.jpg" height="200px" width="200px" >
-            <br>
-        {%elif game == "Fortnite" %}
-            <br>
-            <h2>2-{{game}}</h2>
-            <br>
-            <img src="https://assets.nintendo.com/image/upload/c_limit,f_auto,h_300,q_auto,w_400/v1/ncom/software/switch/70010000010192/Video/posters/2_EN_231041_FNBR_C4S3_GameplayTrailer_EN-ESRB_Nintendo_Console_v2" height="200px" width="200px">
-            <br>
-        {%elif game == "SEQUENCE" %}
-            <br>
-            <h2>3-{{game}}</h2>
-            <br>
-            <img src="https://slimages.macysassets.com/is/image/MCY/products/9/optimized/11412969_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1" height="200px" width="200px">
-            <br>
-
-        {% endif %} 
-        
+        <div class="games">
+            <img  id=imgGame src="{{game.img}}"/>
+            <h3 id="textGame"> - {{game.title}}</h3>
+        </div>
     {% endfor %}
+</div>
+{%endblock%}
 
-</body>
-
-</html>

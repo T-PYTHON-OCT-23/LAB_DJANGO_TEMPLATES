@@ -21,8 +21,19 @@ def Date_views(request:HttpRequest):
 
 
 def FavGame_views(request:HttpRequest):
-    game = ["Chess","Fortnite","SEQUENCE"]
-    
+    game=[
+        {"title":"Chess",
+         "img":"/static\imgs\game1.jpg"
+        },
+        {
+         "title":"Fortnite",
+         "img":"/static/imgs/game2.jpeg"   
+        },
+        {
+         "title":"SEQUENCE",
+         "img":"/static/imgs/game3.jpeg"   
+        },
+    ]
     context={
         "games":game
     }

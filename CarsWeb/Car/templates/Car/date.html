@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<h3>Date Of Today</h3>
-<style>
-    h3 {
-        color: rgb(18, 37, 115)
 
-    }
-    body{
-        background-color:rgb(160, 160, 160);
-       
-    }
-
-</style>
-</head>
-<body>
+{% extends 'Car/base.html'%}
 
 
-{{Date}}
+{% block title %} Date Page {% endblock %}
 
-</body>
-
-</html>
+{% block contant %}
+    <div class="Date">
+        <h3>Date Of Today</h3>
+        <h3>{{Date}}</h3>
+    </div>
+{% endblock %}

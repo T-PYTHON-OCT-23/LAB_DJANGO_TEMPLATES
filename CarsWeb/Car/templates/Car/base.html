@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <title>{% block  title %}   {% endblock %}</title> 
+
+</head>
+
+
+<body>
+        <nav>
+            <img class="logo" src="/static/imgs/logo.jpeg"/>
+                <div class="linkNav">
+                    <a href="/">Home</a>
+                    <a href="/today/">Today</a>
+                    <a href="/random/password/">Random Password</a>
+                    <a href="/favs/games/">Favorite Games</a>
+                </div>
+        </nav>
+
+
+{% block contant %}
+
+
+
+{% endblock %}
+
+<footer>
+    <h3>Car 2023 ,For contact and inquiries:  <a href="mailto:company_email"> Email</a> or  <a href="tel:99566691512">phone</a></h3>
+</footer>
+
+</body>
+
+</html>

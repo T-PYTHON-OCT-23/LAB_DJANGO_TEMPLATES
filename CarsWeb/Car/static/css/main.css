@@ -1,0 +1,107 @@
+
+.header {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 5px 5px 5px 5px gray;
+    font-family: 'Ubuntu', Arial, sans-serif;
+   
+}
+#imgHome {
+    border-radius: 20px;
+    width: 980px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+#font {
+    font-family: 'Ubuntu', Arial, sans-serif;
+    margin-left: 10px;
+}
+#text{
+    margin-left: 10px;
+}
+spn{
+    color: rgb(205, 155, 26);
+}
+
+.Date{
+        
+    background-color:rgb(163, 178, 233);
+
+   
+}
+
+.Password{
+    margin-left: 20px;
+    display: block;
+
+}
+#pas{
+    background-color:rgb(163, 178, 233);
+    display: block;
+
+}
+
+.logo{
+    margin: 5px;
+    width: 60px;
+    border-radius: 5px;
+}
+nav{
+    background-color: rgb(191, 193, 195);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'ubuntu', sans-serif;
+    padding-bottom:1px;
+}
+nav a {
+    text-decoration: none;
+}
+.linkNav{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    font-family: 'ubuntu', sans-serif;
+}
+
+footer {
+    background-color: rgb(209, 210, 211);
+    margin-top:40px;
+    text-align: center;
+    font-family: 'ubuntu', sans-serif;
+    padding-bottom:1px;
+    
+}
+
+.baseGame{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.games{
+    display: inline;
+    margin-top: 10px;
+    background-color:rgb(163, 178, 233);
+
+}
+
+#imgGame{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+#textGame{
+    padding: 10px;
+    margin-left: 30px;
+}

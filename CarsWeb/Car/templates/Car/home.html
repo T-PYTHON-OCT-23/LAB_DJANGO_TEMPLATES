@@ -1,67 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
- <title>Home Page</title>
- <style>
-    .header {
-        margin-top: 50px;
-        margin-left: 200px;
-        margin-right: 200px;
-        box-shadow: 5px 5px 5px 5px gray;
-       
-    }
-    img {
-        border-radius: 20px;
-        width: 980px;
-        height: 300px;
-        margin-left: 50px;
-        margin-right: 20px;
-    }
-    h4{
-        margin-left: 10px;
-    }
-    #font {
-        font-family: 'Ubuntu', Arial, sans-serif;
-        margin-left: 10px;
-    }
-    #text{
-        margin-left: 10px;
-    }
-    a{
-        margin-left: 10px;
-    }
-    li {
-            display: inline;
-            margin-right: 20px;
-    }
-    .service{
-        margin-left: 150px;
+{% extends 'Car/base.html'%}
 
-    }
- </style>
-</head>
+{%block title%} Home Page {%endblock%}
 
-<body>
-
+{%block contant%}
     <div class="header">
         <h1 id="font">RentalCars.com: Car Rentals - Special Offers Online Compare</h1>
-        <h4>Rating: 5/5&#9733;</h4>
-        <img src="{{ image_url }}" />
+        <h4>Rating: 5/5<spn>&#9733;</spn></h4>
+        <img id="imgHome"src="{{ image_url }}" />
         <p id="text">The Biggest Car Rental Brands & Bock Online in a Few Single Dps. We Speak Your Language. 
             No Credit Card Fass Unbeable Prices Types: Factory Mini Compact, People carr Intormedals,
             Premum 4, Estate, SUV, Corventible</p>
             <a href="https://www.google.com/">Learn more...</a>
     </div>
-    <div class="service">
-            <h3>Our service</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/today/">Today</a></li>
-            <li><a href="/random/password/">Random Password</a></li>
-            <li><a href="/favs/games/">Favorite Games</a></li>
-        </ul>
-    </div>
-
-</body>
-
-</html>
+{%endblock%}

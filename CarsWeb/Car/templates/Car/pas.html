@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Random Password Generator</title>
-<style>
-    body{
-        background-color:rgb(160, 160, 160);
-        margin-left: 20px;
-    }
-    h5{
-        color: rgb(59, 45, 131);
-    }
-</style>
-</head>
-<body>
-    <h1>Random Password Generator</h1>
-    <p>Your randomly generated password:</p>
-    <h5>{{ pas }}</h5>
-</body>
 
-</html>
+{% extends 'Car/base.html'%}
+
+
+{%block title%} Random Password Generator{%endblock%}
+
+
+{%block contant%}
+    <div class="Password">
+        <h1>Random Password Generator</h1>
+        <p>Your randomly generated password:</p>
+        <h3 id="pas">{{ pas }}</h3>
+    </div>
+{%endblock%}
+
+
+
