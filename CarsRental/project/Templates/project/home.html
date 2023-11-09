@@ -1,67 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-
-    <style>
-       
-  
-
-
-  
-  .image {
-    width: 600px;
-    height: auto;
-
-            margin-bottom: 20px;
-            border: 4px solid rgb(240, 233, 233);
-            padding: 10px 50px;
-           
-            border-bottom-width: 20px;
-            border-radius: 10px;
-
-  }
-
-  .text {
-    position:relative ;
-    top: 10px;
-    left: 10px;
-    color: rgb(22, 19, 19);
-    
-    padding: 5px;
-    font-family: 'Ubuntu', sans-serif;
-    margin-left: auto;
-    margin-right: 30px;
-  }
-
-
-
-    </style>
-</head>
-<body>
 
 
 
 
+{% extends 'project/base.html' %}
+{% load static %}
 
-      
-  <div class="image"><h1>RentalCars.com:carRental-special offers online </h1>
+{% block title %} Cares Rental {% endblock %}
 
-    <h5>Rating5/5 * </h5>
-
-    <img src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" style="width:100%;" />
-    <a href="home.html">HOME</a>
-  <a href="favorite.html">FAVORITE GAME</a>
-   <a href="password.html">PASSWORD</a>
-    <a href="today.html">TODAY</a>
-    
-      
-        </div>
-  
-  
-    
-   
-</body>
-</html>
+{% block content %}
+    <div class="card">
+        <h1>Car Rental spcial offers online</h1>
+        <h5>Rating 5/5 <span class="star-char">★</span></h5>
+        <img class="card-image" src="{% static 'image/cars.jpg' %}" alt="a group of cars" />
+        <p>Car Rental – Search, Compare & SaveCar Rental – Search, Compare & SaveCar Rental – Search, Compare & SaveCar Rental – Search, Compare & SaveCar Rental – Search, Compare & SaveCar Rental – Search, Compare & SaveCar Rental – Search, Compare & SaveCar Rental – Search, Compare & Save</p>
+        <a href="https://carsrentals.com">Learn More...</a>
+    </div>
+{% endblock %}

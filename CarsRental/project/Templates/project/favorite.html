@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <h1>crash</h1>
-
-  
-   
-   <img src="https://th.bing.com/th/id/OIP.9tPfKFKwJQK89g6whqNqYgHaFj?w=215&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
-<h1>clsh of clans</h1>
-<img src="https://th.bing.com/th/id/OIP.lhR2AUwWuI6og1nV2qbYXgHaDv?w=308&h=176&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
-
-</body>
+{% extends 'project/base.html' %}
 
 
+{% block title %} Favorite Games {% endblock %}
 
+{% block content  %}
+        <h2>My favorite games list:</h2>
 
-</html>
+        <div class="games-container">
+            {% for game in games %}
+
+                <div class="game-card">
+                    <img src="{{game.image}}" />
+                    <div class="game-content">
+                        <h4>{{ game.title }}</h4>
+                    </div>
+                    
+                </div>
+                
+
+            {% endfor %}
+        </div>
+
+{% endblock %}

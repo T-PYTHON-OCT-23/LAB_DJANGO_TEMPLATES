@@ -6,7 +6,6 @@ app_name = "project"
 
 urlpatterns = [
     path("", views.index_view, name="index_view"),
-    path("today/", views.today_view, name="today_view"),
-    path("password/", views.password_view, name="password_view"),
-    path("favorite/game/", views.favorite_game_view, name="favorite_game_view"),
+    path("random/password/", views.password_generator_view, name="password_generator_view"),
+    path("fav/games/", views.fav_games_view, name="fav_games_view")
 ]
