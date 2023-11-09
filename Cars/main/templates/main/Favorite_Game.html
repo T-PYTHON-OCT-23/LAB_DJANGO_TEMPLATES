@@ -1,71 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+{% extends 'main/base.html' %}
+{% load static %}
 
-a {
-  color: rgb(162, 8, 85);
-}
-    body {
-        background-color: rgb(228, 198, 225);
-    }
 
-    div.game {
-        
-     width: 250px;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     text-align: center;
-     background-color: aliceblue;
-    }
+{% block title %} Favorite Games {% endblock %}
 
-    div.container {
-        padding: 10px;
-    }
-</style>
-</head>
-<body>
-
+{% block content  %}
     <div>
         <h1>Welcome to Favorite Games Page </h1>
-    
         <h3>My Favorite games are :</h3>
         <ol>
         {% for games in games %}
-    
             <li>{{ games }}</li>
-    
         {% endfor %}
-        </ol>
+        </ol>   
+    </div>
+    
+    <div class="games-container">
+        <div class="game">
+            <img src=" {% static 'images/crash.png' %}" alt="Crash" style="width:100%">
+             <div class="container">
+                 <p>Crash</p>
+             </div>
+        </div>
+
         
-    </div>
-    
-    <div class="game">
-      <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/c/crash-bandicoot-4-its-about-time-switch/hero" alt="Crash" style="width:100%">
-      <div class="container">
-        <p>Crash</p>
-      </div>
-      
-    </div>
-
-    
-    <div class="game">
-        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202306/2400/ac505d57a46e24dd96712263d89a150cb443af288c025ff2.jpg" alt="Call Of Duty" style="width:100%">
-        <div class="container">
-            <p>Call Of Duty</p>
-        </div>
-    </div>
-
-    <div class="game">
-        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202305/1523/5aaaa377b9a4803f932a1aa4f4b18d8b12ca7c29490dfb14.jpg" alt="Brawlhala" style="width:100%">
-        <div class="container">
-        <p>Brawlhala</p>
+        <div class="game">
+            <img src="{% static 'images/CallOfDuty.jpeg' %}" alt="Call Of Duty" style="width:100%">
+            <div class="container">
+                <p>Call Of Duty</p>
+            </div>
         </div>
 
+        <div class="game">
+            <img src="{% static 'images/Brawlhala.jpeg' %}" alt="Brawlhala" style="width:100%">
+            <div class="container">
+                <p>Brawlhala</p>
+            </div>
+        </div>
     </div>
-
-    <p><b><a href="/" target="_blank">Home</a></b></p>
-
-
-    
-</body>
-</html>
+    {% endblock %}

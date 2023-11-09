@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>{% block title %}  {% endblock %}</title>
+    <link href="/static/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div>
+
+        <nav>
+            <img class="logo" src="/static/images/logo-game.png" />
+
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="{% url 'main:today_view'%}">Today</a>
+                <a href="{% url 'main:random_pass_view' %}">password generator</a>
+                <a href="{% url 'main:fav_games_view' %}">Fav Games</a>
+            </div>
+        </nav>
+
+       {% block content %}
+
+       {% endblock %}
+
+
+       <footer>
+        <h5>Danah IO , 2024 All rights reserved</h5>
+       </footer>
+
+    </div>
+</body>
+</html>

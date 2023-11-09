@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        a {
-  color: rgb(162, 8, 85);
-}
+{% extends 'main/base.html' %}
 
-div.card {
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-
-div.header {
-  background-color: #7b8ed0;
-  color: white;
-  padding: 10px;
-  font-size: 40px;
-}
-
-div.container {
-  padding: 10px;}
-
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today Date </title>
-
-</head>
-<body>
+{% block title %} Today Date {% endblock %}
+{% block content  %}
+ 
     <h1 class ="header">date to day is : </h1>
     <div class="card">
         <div class="header">
@@ -39,9 +13,6 @@ div.container {
             <div class="date">
                 {{date}}
             </div>
-      </div>
+        </div>
     </div>
-    <p><b><a href="/" target="_blank">Home</a></b></p>
-    
-</body>
-</html>
+{% endblock %}

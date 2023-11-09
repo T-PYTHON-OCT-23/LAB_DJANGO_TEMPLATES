@@ -1,0 +1,103 @@
+a {
+    color: rgb(162, 8, 85);
+      }
+
+      nav {
+        background-color: rgb(247, 177, 252);
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:15px;
+    }
+      .logo {
+        width: 40px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-family: 'ubuntu', sans-serif;
+    }
+    
+    
+    footer {
+        border-top: 1px solid rgb(247, 177, 252);
+        padding-top: 10px;
+        margin-top:40px;
+        text-align: center;
+        font-family: 'ubuntu', sans-serif;
+    }
+    .pass {
+        padding: 5px;
+        background-color: rgb(210, 210, 210);
+        border-radius: 15px;
+    }
+
+    .games-container {
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+    }
+
+    .game {
+        
+        width: 550px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        background-color: aliceblue;
+    
+       }
+
+       .container {
+        padding: 10px;
+    }
+
+    .card {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+      }
+      
+      .header {
+        background-color: #7b8ed0;
+        color: white;
+        padding: 10px;
+        font-size: 40px;
+      }
+      
+      .box {
+        width: 80%;
+        padding: 10px;
+        margin: 0px auto;
+        border: 1px solid rgba(0,0,0,0.1);
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.3);
+        margin-top:20px;
+        font-family: sans-serif;
+    }
+
+    .box img {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+.checked {
+    color: orange;
+    }
+
+
+    
+
+a {
+color: hotpink;
+}
+
+.home {
+    font-family:  Agbalumo;
+    margin:auto 10px;
+    padding: 20px;
+    }

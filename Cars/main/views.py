@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
 from django.utils.crypto import get_random_string
 import datetime
+import string
 
 
 # Create your views here.
@@ -17,7 +18,7 @@ def today_view(request:HttpRequest):
     return render(request, 'main/Date.html',context)
 
 def random_pass_view(request :HttpRequest):
-    password=get_random_string(8)
+    password=get_random_string(8 ,string.ascii_letters+string.digits+string.punctuation)
     context={
         "pass":password
     }
