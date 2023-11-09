@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>{% block title%} {% endblock %}</title>
+    <link href="/static/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <img class="smile-face-logo" src="/static/images/summer.png" />
+        <div class = "nav-links"> 
+            <a href="">Home</a>
+            <a href="{% url 'main:today_date' %}">today_date</a>
+            <a href="{% url 'main:random_password' %}">random_password</a>
+            <a href="{% url 'main:cars_rentals' %}">cars_rentals</a>
+            <a href="{% url 'main:fav_games_list'%}">fav_games_list</a>
+
+        </div>
+    </nav>
+
+    {% block content %}
+     {% endblock %}
+
+     <footer>
+        <h5> Sufana's Company  | 2023 </h5>
+     </footer>
+    
+</body>
+</html>

@@ -3,8 +3,8 @@ from . import views
 app_name = "main"
 
 urlpatterns = [
-    path("", views.basic, name="basic"),
-    path("today/", views.today, name='today'),
-    path("random/password/", views.random_password, name='password'),
-    path("favs/games/",views.games , name='games')
+    path("", views.cars_rentals, name="cars_rentals"),
+    path("today_date/", views.today_date, name='today_date'),
+    path("random/password/", views.random_password, name='random_password'),
+    path("favs/games/",views.fav_games_list , name='fav_games_list')
 ]
