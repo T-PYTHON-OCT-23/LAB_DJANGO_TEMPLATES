@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}  {% endblock %}</title>
+    <style>
+        body {
+            font-family: Ubuntu;
+            background-color: #f0f0f0;
+            margin: 10px; /* Add 'px' unit to margin and padding */
+            padding: 10px; /* Add 'px' unit to margin and padding */
+        }
+        
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Correct the box-shadow value */
+            text-align: left;
+        }
+        
+        h1, h3, p {
+            font-family: Ubuntu; /* Correct the 'family' to 'font-family' */
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+        }
+        
+        .gold-star {
+            color: gold;
+        }
+        
+        .expand-paragraph {
+            display: none;
+        }
+        
+        .expand-paragraph-label {
+            text-align: left;
+            display: block;
+            cursor: pointer;
+            color: #0070cc;
+            text-decoration: underline;
+        }
+        
+        #expand-paragraph:checked ~ .expand-paragraph-label + .expand-paragraph {
+            display: block;
+        }
+        
+        #expand-paragraph:checked ~ .expand-paragraph-label {
+            display: none;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            color: #0070cc;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        ul li a:hover {
+            color: #ff6600;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5%; /* You can adjust this value to control the amount of rounding */
+        }
+
+        footer {
+            text-align: center; /* Align text to the left */
+            background-color: #fff;
+            padding: 10px;
+            margin: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            justify-content: center;
+        }
+
+        .logo {
+ 
+            width: 7%;
+            height: 7%;
+            display: block;
+            border-radius: 5%; /* You can adjust this value to control the amount of rounding */
+            margin: 0 auto;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>{% block heading %}  {% endblock %}</h1>
+        {% block content %}  {% endblock %}
+    </div>
+    
+    <footer>
+        <img class="logo" src="/static/main/logo.jpg" />
+        <!-- Navigation links to other pages -->
+        <h3>Our service</h3>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/today/">Today</a></li>
+            <li><a href="/favs/games/">Games</a></li>
+            <li><a href="/random/password/">Random Password</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

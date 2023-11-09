@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+{% extends 'main/base.html' %}
+{% block title %} HomePage {% endblock%}
+
+</head>
+
+{% block content %}
+<body>
+    
+    <div class="container">
+        <h1>RentalCar.com: Car Rentals - Special Offers Online</h1>
+        <h3>Rating 5/5 <span class="gold-star">★</span></h3>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" alt="Website Image">
+        <p>Embark on a thrilling journey with RentalCar.com's exquisite fleet of vehicles. From sleek sports cars that hug the curves of the open road to spacious SUVs designed for family adventures, our collection is your gateway to unforgettable experiences. Choose from a selection of meticulously maintained cars that promise comfort, style, and unmatched performance.</p>
+        <input type="checkbox" id="expand-paragraph" class="expand-paragraph">
+        <label for="expand-paragraph" class="expand-paragraph-label">Learn More</label>
+        <p class="expand-paragraph">Your next adventure awaits, and it begins with the perfect car at RentalCar.com.</p>
+    </div>
+</body>
+
+{% endblock %}
+</html>

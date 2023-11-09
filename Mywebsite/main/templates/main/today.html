@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    {% extends 'main/base.html' %}
+    {% block title %} Today Information {% endblock%}
+</head>
+    {% block content %}
+<body>
+    <h1>Today's Information</h1>
+    <p><strong>IP Address:</strong> {{ iP }}</p>
+    <p><strong>Date and Time:</strong> {{ DATE }}</p>
+</body>
+    {% endblock %}
+</html>

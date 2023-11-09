@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>    
+{% extends 'main/base.html' %}
+
+{% block title %} favorites Games {% endblock%}
+    
+</head>
+<body>
+    {% block content %}
+    <h1>My favorites Game Poster</h1>
+    <p><strong>Game:</strong> {{ game }}</p>
+    <img src="/static/main/{{ image_path }}" alt="{{ game }} Poster">
+    {% endblock %}
+</body>
+</html>
