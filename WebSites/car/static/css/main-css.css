@@ -51,4 +51,16 @@ span {
 }
 .navbar a {
     text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.logo {
+    width: 10%;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
 }

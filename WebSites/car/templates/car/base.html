@@ -14,10 +14,15 @@
     <div>
         <nav >
             <div class="navbar">
-                <a href="{% url 'car:home_page_views'%}">Home</a>
-                <a href="{% url 'car:favs_game_views'%}">Favorite Games</a>
-                <a href="{% url 'car:random_password_views'%}">Password Generator</a>
-                <a href="{% url 'car:today_date_views'%}">Today</a>
+                <div>
+                    <img class="logo" src="{% static 'images/logo-game.png' %}" alt="logo-game">
+                </div>
+                <div class="nav-links">
+                    <a href="{% url 'car:home_page_views'%}">Home</a>
+                    <a href="{% url 'car:favs_game_views'%}">Favorite Games</a>
+                    <a href="{% url 'car:random_password_views'%}">Password Generator</a>
+                    <a href="{% url 'car:today_date_views'%}">Today</a>
+                </div>
             </div>
         </nav>
         {% block body %}
