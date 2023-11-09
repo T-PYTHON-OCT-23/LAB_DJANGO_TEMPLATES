@@ -1,0 +1,110 @@
+#main {
+    width: 70%;
+    height: 30%;
+    margin-right: 150px;
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-width: 1.3px;
+    border-style: solid;
+    border-color: rgba(147, 146, 146, 0.705);
+    background-color: rgba(193, 193, 193, 0.694);
+    box-shadow: 1px 1px 25px 3px rgb(158, 157, 157, 5), -5px -5px 30px 3px rgb(129, 129, 129, 5);
+
+}
+
+h1,
+p {
+    margin: 25px;
+}
+
+#image {
+    width: 560px;
+    height: auto;
+    margin-right: 150px;
+    margin-left: 150px;
+    position: inherit;
+    border-radius: 15px;
+    display: flex;
+}
+
+#image:hover {
+    transform: scale(0.9, 0.9);
+    transition-duration: 0.3s;
+}
+
+a {
+    margin: 15px;
+    position: relative;
+}
+
+a:hover {
+    color: blueviolet;
+    font-size: larger;
+    transition-duration: 0.2s;
+    margin: 10px;
+}
+
+* {
+    background-color: rgb(225, 209, 190);
+}
+
+title {
+    margin: 20px;
+    width: 100%;
+
+}
+
+.Games-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 20px;
+
+
+}
+
+.Games {
+    margin: 30px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px 3px rgb(158, 157, 157, 5), -5px -5px 30px 3px rgb(129, 129, 129, 5);
+    transition: 0.4s;
+}
+
+.Game-image {
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.Game-image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.Game-name {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: black;
+    font-size: 30px;
+    margin-top: -80px;
+    border-radius: 20px;
+}
+
+.Games:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 1px 1px 25px 3px rgb(158, 157, 157, 5), -5px -5px 30px 3px rgb(129, 129, 129, 5);
+}

@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} Favorite Games {% endblock %}
+
+{% block content  %}
+    <h1 id="title"> My Favorite Games are: </h1>
+    <ol>
+        {% for games in games %}
+
+            <li>{{ games }}</li>
+
+        {% endfor %}
+        </ol>
+
+    
+        <div class="Games-list">
+            <div class="Games">
+                <img src=" {% static 'images/hayDay.png' %}" alt="hayDay" style="width:100%">
+                </div>
+                <div class="Game-name">
+                    <p> Hay Day </p>
+                </div>
+            </div>
+        <div class="Games-list">
+            <div class="Games">
+                <img src=" {% static 'images/Lodu.png' %}" alt="Lodu" style="width:100%">
+                </div>
+                <div class="Game-name">
+                    <p> Ludo Star </p>
+                </div>
+            </div>
+
+            <div class="Games-list">
+                <div class="Games">
+                    <div class="Game-image"> 
+                        <img src=" {% static 'images/CookingFever.png' %}" alt="CookingFever" style="width:100%">
+                    </div>
+                    <div class="Game-name">
+                        <p> Cooking Fever </p>
+                    </div>
+                </div>
+
+                <div class="Games-list">
+                    <div class="Games">
+                        <div class="Game-image"> 
+                            <img src=" {% static 'images/Sudohu.png' %}" alt="Sudohu" style="width:100%"> </div>
+                        <div class="Game-name">
+                            <p> Sudoku </p>
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}

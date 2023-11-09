@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Rental Cars {% endblock%}
+
+
+{% block content %}
+    <div id="main">
+        <h1>RentalCars.com: Car Rentals - special Offers Online</h1>
+
+        <div>
+            <h4 id="star"> Rating 5/5 </h6>
+        </div>
+        <img src="{% static 'images/Cars.jpeg' %}" />
+        <p> Compare The Biggest Car Rental Brands & Book Online in a few Simple steps. We Speak your Language. No
+            credit
+            Card Fees. unbeatable Prince. Types: Economy, Mini, Compact, People, Intermediate, premium, 4×4, Estate,
+            SUV, Convertible. </p>
+        <a href="">Learn more</a>
+    </div>
+
+    {% endblock %}
