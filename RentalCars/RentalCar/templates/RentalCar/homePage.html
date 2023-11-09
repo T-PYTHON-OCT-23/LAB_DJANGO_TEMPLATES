@@ -1,70 +1,16 @@
-<!DOCTYPE html>
-<html>
-<header>
-    <style>
-    .css-box {
-        margin-top: 50px;
-        margin-left: 100px;
-        margin-right: 100px;
-        box-shadow: 5px 5px 5px 5px gray;
-    }
-    #font{
-        font-family: 'Ubuntu', sans-serif;
-        margin-left: 10px;
-        
-    }
-    #rating-color{
-        color: gray;
-    }
-    img {
- 
-  border-radius: 8px;
-  width: 1000px;
-  height: 300px;
-  margin-left: 20px;
-  margin-right: 50px;
-}
+{% extends 'RentalCar/base.html' %}
+{% load static %}
 
-    p{
-        margin-left: 10px;  
-    }
-   
-    .css-box2 {
-    
-    margin-left: 0px;
-    margin-right: 100px;
-    
-}
-a{
-    margin: 15px;
-}
-.footer li {
-  display: inline-block;
+{% block title %} Home Page  {% endblock %}
 
-}
-</style>
-</header>
-<body>
+{% block content  %}
 
 <div class = "css-box">
     <br>
     <h1 id = "font">RentalCars.com: Car Rentals - Special Offers Online</h1>
     <p id = "rating-color">Rating: 5/5⭐</p>
-    <img src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" alt="cars" />
+    <img src="{% static 'images/base.jpg' %}" alt="cars" />
     <p>Compare The Biggest Car Rental Brands & Book Online in a Few Simple Steps. We Speak Your Language. No Credit Card Fees. Unbeatable Prices. Types: Economy , Mini, Compact, People carrier,Intermediate, Premium, 4x4, Estate, SUV, Convertible.</p>
     <a href="https://www.rentalcars.com/?affiliateCode=google_brand&preflang=ar&label=rentalcars.com-brand:mdaH2PTdJa263pugiuJRgAgQ:tyS:cr659148576446:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-29977620:lp1012088:li:dec:dm:ws&gclid=CjwKCAiA3aeqBhBzEiwAxFiOBgnQghzUGOwj3mEybqP910VZQImpJZitquqVto71Mk95Odr0ZcCrABoCWCoQAvD_BwE">Learn More..</a>
 </div>
-<div class = "css-box2">
-    <ul class = "footer li">
-        <h2>Our Services</h2>
-       <li> <a href="/">Home</a></li>
-            
-        <li><a href="/today/">Today</a></li>
-            
-        <li><a href="/random/password/">Password Generator</a></li>
-    
-        <li><a href="/favs/games/">Favorite games</a></li>
-    </ul>
-</div> 
-</body>
-</html>
+{% endblock %}

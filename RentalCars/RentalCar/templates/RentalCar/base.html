@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <title>{% block title %}  {% endblock %}</title>
+
+</header>
+<body>
+    
+   <div>
+            <nav>
+            
+                <img id = "logo" src="{% static 'images/car1.jpg' %}" alt="logo" />
+                <div class="nav-links">   
+            
+                <a href="{% url 'RentalCar:homePage' %}">Home</a>
+                    
+                <a href="{% url 'RentalCar:today' %}">Today</a>
+                    
+                <a href="{% url 'RentalCar:password' %}">Password Generator</a>
+            
+                <a href="{% url 'RentalCar:games' %}">Favorite games</a>
+            
+</div> 
+            </nav>
+
+    {% block content %}
+    
+    {% endblock %}
+</div>
+    <footer>
+        <h2>For Rental Car , 2023 all right reserved</h2>
+        <h3>Contact: Ebtesam@hotmail.com</h3>
+    </footer>
+</body>
+</html>
