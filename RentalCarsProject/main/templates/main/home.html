@@ -1,86 +1,23 @@
+{% extends 'main/base.html' %}
+{% load static %}
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title> Rental Cars </title>
-
-    <style>
-      
-      .bigBox{
-        font-family: Arial;
-        margin: 0 auto;
-        max-width: 800px;
-        padding: 20px;
-        box-shadow: 5px 10px 8px #888888;
-        
-      }
-
-       .serv{
-        margin: 0 auto;
-        max-width: 800px;
-        padding: 20px;
-
-       }
-
-        
-        #checked{
-            color: orange;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        .img{
-           
-            width: 700px;
-            position: relative;
-            left: 55px;
-        
-
-        }
-
-
-    </style>
-
+    <title>{% block title %} CarsRentals.com {%endblock%} </title>
+    
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block content %}
 <body>
-    <div class="bigBox">
-    <h1>RentalCras.com:Cars Rental - Special Offers Online </h1>
-   
-
-    <div class="rate">
-    <span class="heading"> Rating : 5/5</span>
-    <span id="checked" class="fa fa-star checked" > </span>
-        
-    </div>
-
-
-
-    <img class="img" src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" width="100" height="auto">
-
-    <p>Compare the Biggest Car Rental Brands & Books Online in a Few Simple Steps. We Speak Your Language. No Credit Cards Fees</p>
-
-    <a href="https://www.rentalcars.com/" > Learn more </a>
-
-
-</div>
-
-<div class="serv">
-    <h3>Our Services</h3>
-    <a href="/" > Home </a>
-    <a href="today/" > &nbsp; &nbsp;Today </a>
-    <a href="random/pass" >&nbsp; &nbsp; Random Password </a>
-    <a href="favs/games" > &nbsp; &nbsp;Favorite Games </a>
-
-
-
-
-</div>
-
-
-
-
+    <div class="card">
+        <h1>Car Rental Search, Compare & Save</h1>
+        <h5>Rating 5/5 <span class="star-char">★</span></h5>
+        <img class="card-image" src="{% static 'images/cars.jpg' %}" alt="a group of cars" />
+        <p>Brest is a city located in the Finistere department in Brittany in northwestern France. Brest is renowned for its Pont de Recouvrance, the rue de Siam,and the military arsenal. The castle and the Tanguy tower are the oldest monuments of Brest. The Musee national de la Marine de Brest houses in the primeval castle comprises exhibits which delineate Brest's maritime tradition as well as aquarium named Oceanopolis marine centre. Brest also has a renowned botanical garden, the Conservatoire botanique national de Brest as well as the Jardin botanique de l'Hopital d'Instruction des Armees Clermont-Tonnerre.</p>
+        <a href="https://carsrentals.com">Learn More...</a>
 
 </body>
-
-
-</html>
+    {%endblock%} 

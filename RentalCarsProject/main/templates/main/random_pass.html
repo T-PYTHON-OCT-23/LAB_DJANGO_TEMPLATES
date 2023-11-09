@@ -1,28 +1,13 @@
+{% extends 'main/base.html' %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Random Password </title>
+    <title> {% block title %} Random Password {% endblock %} </title>
 
-    <style>
-        .header{
-            color:black;
-            text-align:center;
-            font-size: 100px;
-        }
-
-
-        .pass{
-            color:cornflowerblue;
-            position: static;
-            border: 2px solid cornflowerblue;
-            text-align:center;
-            font-size: 100px;
-        }
-
-
-    </style>
+  
 
 </head>
+    {% block content %}
 <body>
 
     <h1 class="header"> Random Password :</h1>
@@ -30,9 +15,6 @@
     <div class="pass">
         {{pass}}
     </div>
-
-
 </body>
 
-
-</html>
+    {% endblock %}

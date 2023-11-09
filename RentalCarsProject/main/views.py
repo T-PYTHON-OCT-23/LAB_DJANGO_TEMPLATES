@@ -26,11 +26,23 @@ def random_pass_view(request : HttpRequest ):
 
 
 def favs_games_view(request : HttpRequest ):
-    games = ["Crash" , "Fun Run" , "Pepsi Man "]
-    context={
-        "games" : games
-    }
-    return render(request , "main/favs_games.html" , context)
+    fav_games = [
+    {
+        "title" : "Crash Bandicoot",
+        "image" : "/static/images/game1.jpeg"
+    },
+    {
+        "title" : "Fun Run",
+        "image" : "/static/images/game2.webp"
+    },
+    {
+        "title" : "Pepsi Man",
+        "image" : "/static/images/game3.webp"
+    },
+
+  
+]
+    return render(request , "main/favs_games.html" , context = {"games" : fav_games})
 
 
 def home_view(request : HttpRequest ):

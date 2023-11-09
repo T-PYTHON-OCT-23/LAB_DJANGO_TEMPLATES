@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>{%block title%} {% endblock %}</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav>
+        <img class="logo" src="/static/images/logo-gaming.jpeg" />
+        <a href="{% url 'main:home_views' %}">Home page</a>
+        <a href="{% url 'main:random_pass_views' %}">password generator</a>
+        <a href="{% url 'main:favs_games_views' %}">Favorite games</a>
+        <a href="{% url 'main:today_views' %}">Today</a>
+        
+    </nav>
+    {%block content%} 
+    
+    {% endblock %}
+    
+<footer>
+    <h3> Cars Rental .. Published: Nov 09, 2023 </h3>
+</footer>
+
+
+</body>
+</html>

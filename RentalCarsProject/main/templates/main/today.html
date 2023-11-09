@@ -1,28 +1,12 @@
+{% extends 'main/base.html' %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Date For Today </title>
-
-    <style>
-        .header{
-            color: burlywood;
-            text-align:center;
-            font-size: 100px;
-        }
-
-
-        .date{
-            color: cadetblue;
-            position: static;
-            border: 2px solid cadetblue ;
-            text-align:center;
-            font-size: 100px;
-        }
-
-
-    </style>
+    <title> {% block title %} Date For Today {% endblock %}</title>
+]
 
 </head>
+{% block content %}
 <body>
 
     <h1 class="header"> Today's date is :</h1>
@@ -33,6 +17,5 @@
 
 
 </body>
+{% endblock %}
 
-
-</html>
