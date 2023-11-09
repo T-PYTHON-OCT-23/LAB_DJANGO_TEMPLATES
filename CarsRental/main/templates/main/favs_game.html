@@ -1,54 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Games</title>
 
-    <style>
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+   {% extends 'main/base.html' %}
+   {% block title %}Favorite Games{% endblock %}
 
-        li {
-            display: inline-block;
-            margin: 10px;
-        }
+   {%block content%}
 
-        img {
-            width: 150px;        
-            margin-bottom: 10px;
-        }
 
-        p {
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-        }
-        div{
-            border: solid red;
-            box-shadow: 33px 33px 33px;
-            border-radius: 3pc;
-            width: 50%;
-            background-color: antiquewhite;
-        }
-        h1{
-            border: solid brown;
-            background-color: brown;
-            border-radius: 3pc;
-            width: 50%;
-        }
+   <div class="games">
 
-    </style>
-</head>
-<body>
-    
-    <div>
-
-        <h1>My Favorite Games</h1>
+        <h1 class="game-title">My Favorite Games</h1>
         <ul>
-            <li>
+            <li class="games-image">
                 <img src="https://target.scene7.com/is/image/Target/GUEST_9c76f6b4-e9b7-499c-a943-fd4a41b2d8b3?wid=1200&hei=1200&qlt=80&fmt=webp" alt="FC 24">
                 <p>FC 24</p>
             </li>
@@ -66,5 +27,4 @@
         </ul>
 
     </div>
-</body>
-</html>
+{% endblock %}

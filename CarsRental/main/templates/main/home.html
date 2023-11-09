@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars Rental</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-    <style>
 
-        .intro{
-          
-            border: solid black;
-            border-radius: 20px;
-            font-family: 'Ubuntu', sans-serif;
-            box-shadow: 10px 10px 5px;
-            width: 50%;
-            padding: 5px;
-            font-size:small;
-            
-        }
-        .content{
-            margin-top: 30px;
-            margin-left: 360px;
-            
-            
+{%extends 'main/base.html'%}
 
-        }
-        img{
-            border-radius: 20px;
-        }
-        span{
-            padding-left: 20px;
-        }
-    </style>
-</head>
-<body>
-
-        
+{% block content %}        
         <div class="content">
 
                 <div class="intro">
@@ -46,13 +11,5 @@
                     <h6><a href="https://en.wikipedia.org/wiki/Car_rental">Learn more</a></h6>
                 </div>
 
-                <div>
-                    <h2>Our Services</h2>
-        
-                    <p style="margin-left: 20px;"><span><a href="">Home</a></span> <span> <a href="today">Tody</a></span><span><a href="random/password/">Password Generator</a></span><span><a href="favs/games/">Favorite Games</a></span> </p>
-                </div>
         </div>
-    
-      
-</body>
-</html>
+{%endblock%}

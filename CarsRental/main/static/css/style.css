@@ -1,0 +1,102 @@
+.intro{
+          
+    border: solid black;
+    border-radius: 20px;
+    font-family:  sans-serif;
+    box-shadow: 10px 10px 5px;
+    width: 50%;
+    padding: 5px;
+    font-size:small;
+    
+}
+.content{
+    margin-top: 30px;
+    margin-left: 360px;
+    
+    
+
+}
+img{
+    border-radius: 20px;
+}
+
+.password{
+    text-align: center;
+    color: brown;
+    border: solid blue;
+    box-shadow: 10px 10px 5px;
+    width: 50%;
+    padding: 2pc;
+    border-radius: 20%;
+    margin-top: 30px;
+    
+}
+
+.base_nav{
+
+    border: solid;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: start;
+    padding: 5px;
+    flex-direction:start;
+    align-items: center;
+    gap:20px;
+}
+.base_nav a{
+    
+    text-decoration: none;
+    
+}
+.logo {
+    width: 40px;
+}
+.time{
+    text-align: center;
+    color: brown;
+    border: solid blue;
+    box-shadow: 10px 10px 5px;;
+    width: 50%;
+    padding: 2pc;
+    border-radius: 20%;
+    margin-top: 30px;
+    
+}
+.game-title{
+    border: solid 0px;
+    background-color: brown;
+
+
+}
+.games{
+    width: 50%;
+    border: 0px;
+    box-shadow: 23px 24px 25px;
+    background-color: antiquewhite;
+}
+.games img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    object-fit: fill;
+    
+}
+ul{
+    display: flex;
+    justify-content: start;
+    
+}
+footer div {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    width: 100%;
+    height: auto;
+
+
+    border: 1px;
+    background-color: bisque;
+    text-align: center;
+    
+}

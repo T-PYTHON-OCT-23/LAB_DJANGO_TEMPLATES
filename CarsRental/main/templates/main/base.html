@@ -1,0 +1,31 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock %}</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav class="base_nav" >
+        <img class="logo" src="{% static 'images/logo-game.png' %}" alt="logo">
+        <a href="{% url 'main:home' %}">Home</a>
+        <a href="{% url 'main:today' %}">Today</a>
+        <a href="{% url 'main:random_password' %}">Random Password</a>
+        <a href="{% url 'main:favs_game' %}">Favorite Games</a>
+        
+    </nav>
+    {% block content %}
+
+    {%endblock%}
+</body>
+<footer>
+    <div>
+
+        <p>designed by abdullah</p>
+    </div>
+</footer>
+</html>
