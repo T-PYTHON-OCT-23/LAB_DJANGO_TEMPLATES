@@ -7,7 +7,7 @@ from django.utils.crypto import get_random_string
 
 def index_viwe(request:HttpResponse):
 
-    return render(request , 'car_rental/index.html')
+    return render(request , 'car_rentall/index.html')
 
 def today_viwe(request:HttpResponse):
     time_now = time.ctime(time.time())
@@ -15,14 +15,14 @@ def today_viwe(request:HttpResponse):
     context ={
         "today" : time_now 
     }
-    return render(request,'car_rental/today.html',context)
+    return render(request,'car_rentall/today.html',context)
 
 def random_password(request:HttpResponse):
     password=get_random_string(12)
     context ={
         "random_password" : password
     }
-    return render(request,'car_rental/random_password.html',context)
+    return render(request,'car_rentall/random_password.html',context)
 
 def favs_games(request:HttpResponse):
     list_favs_games=["X & O","Pepsi man","Fifa EA"]
@@ -31,4 +31,4 @@ def favs_games(request:HttpResponse):
 
     }
 
-    return render(request,'car_rental/favs_games.html',context)
+    return render(request,'car_rentall/favs_games.html',context)
