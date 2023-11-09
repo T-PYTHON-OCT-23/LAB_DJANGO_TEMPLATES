@@ -1,27 +1,31 @@
-# LAB_DJANGO_TEMPLATES
+# Project Title: Multi-Utility App
+This project is a multi-utility application that includes a Password Generator, IP Finder, Time Display, and Games Posters.
 
+**Features**
+Password Generator
+This feature allows you to generate strong, secure passwords. You can customize the length and the types of characters you want in your password.
 
+**IP Finder**
+This feature allows you to find your public IP address. It's a quick and easy way to know your IP without having to go through complex network settings.
 
-# Create a new website using Django (choose any project name) . Your website should have the following paths :
+**Time Display**
+This feature displays the current time. It's a simple yet useful tool for when you need to quickly check the time.
 
-### `/`
-  - this is the homepage . It should have an image (choose any image) , a heading (h1) and a paragraph about the website.
-  - Also , using <UL> / <LI> elements and <a> , add links to each other page in your website.
-  - Use the following url for the image : `https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg`
-  - The page should look like the following:
-<div>
-  <img src="https://github.com/T-PYTHON-OCT-23/LAB_DJANGO_TEMPLATES/blob/main/Screenshot%202023-11-07%20at%2011.14.02%20AM.png?raw=true" style="width:100%;" />
-</div>
-    
-### `today/`
-  - This should display the date of today .
-  
-### `random/password/`
-  - This should display a randomly generated password . 
-  
-### `favs/games/`
-   - This should display a list of your favorite games. Each game with its image and title.
-  
+**Games Posters**
+This feature displays posters of various games. It's a great way for gaming enthusiasts to discover new games and appreciate the art of their favorite ones.
 
+**Installation**
+Clone the repository
+Install the required dependencies
+Run the application
+**Usage**
+Detailed instructions on how to use each feature are provided within the application.
 
-### Make sure to use templates for each of the above paths and proper HTML. 
+**Contributing**
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+License
+MIT
+
+Contact
+If you have any questions or suggestions, feel free to reach out.
