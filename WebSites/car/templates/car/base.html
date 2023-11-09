@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} {% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main-css.css' %}">
+</head>
+<body>
+    <div>
+        <nav >
+            <div class="navbar">
+                <a href="{% url 'car:home_page_views'%}">Home</a>
+                <a href="{% url 'car:favs_game_views'%}">Favorite Games</a>
+                <a href="{% url 'car:random_password_views'%}">Password Generator</a>
+                <a href="{% url 'car:today_date_views'%}">Today</a>
+            </div>
+        </nav>
+        {% block body %}
+        {% endblock %}
+
+        <footer>
+            <div class="footer">
+                <h6> Hazalnuts, 2023 All right are researved</h6>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Today</title>
-</head>
-<body>
-    <h1>Today is {{date}}</h1>
-</body>
-</html>
+{% extends 'car/base.html' %}
+    {% block title %}Today {% endblock %}
+    {% block body %}Today is {{date}} {% endblock %}
+

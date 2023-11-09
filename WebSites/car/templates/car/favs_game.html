@@ -1,27 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Favorite Games</title>
-    <style>
-        .main {
-            border:2px solid rgb(185, 181, 181);
-            margin: 10px;
-            padding: 20px;
-            border-radius: 16px;
-            font-family: 'Ubuntu', sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <div class="main">
-        <div class="game">
-            {% for game in games %}
-            <h1> My Favorite Games is {{ game.name }}</h1>
-            <h2>Description: {{ game.title }}</h2>
-            <img src="{{ game.image }}" alt="My favorite game">
-            {% endfor %}
-
+{% extends 'car/base.html'%}
+    {% block title%} My Favoraite Games{% endblock %}
+    {% block body %}
+    <div>
+        <div class="main">
+            <div class="game">
+                {% for game in games %}
+                <h1> My Favorite Games is {{ game.name }}</h1>
+                <h2>Description: {{ game.title }}</h2>
+                <img src="{{ game.image }}" alt="My favorite game">
+                {% endfor %}
+            </div>
         </div>
     </div>
-</body>
-</html>
+    {% endblock %}

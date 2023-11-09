@@ -5,7 +5,6 @@ import secrets
 import string
 today_date = datetime.date.today()
 
-
 # Create your views here.
 def home_page_views(request:HttpRequest):
     rate = 5

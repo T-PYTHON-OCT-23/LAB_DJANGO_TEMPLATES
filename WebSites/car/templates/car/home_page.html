@@ -1,55 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-    <title>Rentals Cars</title>
-    <Style>
-        .page{
-            margin: 10px;
-            margin-left: 70px;
-            margin-right: 70px;
-        }
-        .main{
-           border:2px solid rgb(185, 181, 181);
-           box-shadow: 20px 20px 20px black;
-           margin-top: 20px;
-           padding: 8px;
-           border-radius: 16px;
-           font-family: 'Ubuntu', sans-serif;
-           position: relative;
-        }
-        img {
-            height: 400px;
-            width: 1250px;
-            object-fit: fill;
-            border-radius: 16px;
-        }
-        .secound {
-            display: inline;
-        }
-        span {
-            padding: 10px;
-        }
-    </Style>
-</head>
-<body>
+{% extends 'car/base.html' %}
+    {% block title%} Car Rentals {% endblock %}
+    {% block body %}
     <div class="page">
-    <div class="main">
+    <div class="main1">
         <h1>RentalsCars.com: {{title}}</h1>
         <h3>Rate:{{rate}}/{{rate_of}} </h3>
         <img src="{{image}}" alt="My Image">
         <h4>{{paragraph}}</h4>
         <h4><a href="https://www.topgear.com/car-news/electric/top-gears-top-20-electric-cars">Learn More</a></h4>
     </div>
-    <h2 class="our">Our services</h2>
-    <div class="secound">
-        <p>
-            <span><a href="">Home</a></span>
-            <span><a href="favs/games/">Favorite Game </a></span>
-            <span><a href="random/password/">Password Generator</a></span>
-            <span><a href="today/">Today</a></span>
-        </p>
-    </div>
-</div>
-</body>
-</html>
+    {% endblock %}
+
