@@ -1,11 +1,10 @@
 from django.urls import path
 from . import views
+app_name = "main"
 
-app_name = "car_rentall"
-
-urlpatterns =[
-    path("" , views.index_viwe , name="index_view"),
-    path("today/" , views.today_viwe , name="today_viwe"),
-    path("random/password/" , views.random_password, name="random_password"),
-    path("favs/games/" , views.favs_games , name="favs_games"),
+urlpatterns = [
+    path("", views.cars_rentals, name="cars_rentals"),
+    path("today_date/", views.today_date, name='today_date'),
+    path("random/password/", views.random_password, name='random_password'),
+    path("favs/games/",views.fav_games_list , name='fav_games_list')
 ]

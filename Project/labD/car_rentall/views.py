@@ -1,34 +1,45 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-import time
+from django.http import HttpRequest, HttpResponse
 from django.utils.crypto import get_random_string
+import datetime
+
 
 # Create your views here.
 
-def index_viwe(request:HttpResponse):
+def cars_rentals(request : HttpRequest):
+    return render(request, "main/cars_rentals.html")
 
-    return render(request , 'car_rentall/index.html')
-
-def today_viwe(request:HttpResponse):
-    time_now = time.ctime(time.time())
-
-    context ={
-        "today" : time_now 
+def today_date(request : HttpRequest):
+    date = datetime.datetime.today().date()
+    content = {
+        'date':date
     }
-    return render(request,'car_rentall/today.html',context)
+    return render(request,"main/today_date.html" ,content)
 
-def random_password(request:HttpResponse):
-    password=get_random_string(12)
-    context ={
-        "random_password" : password
-    }
-    return render(request,'car_rentall/random_password.html',context)
-
-def favs_games(request:HttpResponse):
-    list_favs_games=["X & O","Pepsi man","Fifa EA"]
-    context = {
-        "games" : list_favs_games
+def random_password(request : HttpRequest):
+    password = get_random_string(length=12)
+    content= {
+        'Password': password
 
     }
+    return render(request, "main/password.html",content)
 
-    return render(request,'car_rentall/favs_games.html',context)
+
+def fav_games_list(request: HttpRequest):
+
+    fav_games = [
+        {
+            "title" : "fifa",
+            "image" : "/static/images/fifa.jpg"
+        },
+        {
+            "title" : "pipsiman",
+            "image" : "/static/images/pipsiman.jpg"
+        },
+        {
+            "title" : "xo",
+            "image" : "/static/images/xo.png"
+        },
+
+    ]
+    return render(request, "main/games.html", context = {"games" : fav_games})
