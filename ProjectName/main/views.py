@@ -31,11 +31,22 @@ def random_pass_view(request : HttpRequest):
 
 
 def fava_games_view(request : HttpRequest):
+  
+  fav_games=[
 
-   gemes =["GTA V ", "Project Makeover ","bowling"]
+  {
+            "title" : "GTA V",
+            "image" : "/static/images/game1.png"
+        },
+        {
+            "title" : "Project Makeover",
+            "image" : "/static/images/game2.png"
+        },
+        {
+            "title" : "bowling",
+            "image" : "/static/images/geme3.png"
+        },
 
-   context= {
-   "gemes": gemes
-   }
-
-   return render(request,'main/favs_games.html', context)
+       
+   ]
+  return render(request,'main/favs_games.html', context= {"games" : fav_games})

@@ -1,47 +1,25 @@
-<!DOCTYPE html>
-<html>
-    <head> 
-    <title> Favorites games</title>
-    <style>
+{% extends 'main/base.html' %}
 
-h1{
-            border-style: double;
-            border-radius: 5px;
-            font-family: 'Ubuntu', sans-serif;
-            margin: 50px 40px 20px 10px;
-            background-color: rgb(206, 165, 197) ;
-            color: rgb(63, 8, 63);
-            text-align: center;
-        }
 
-        p{
-            color: rgb(43, 116, 226);
-        }
+{% block title %} Favorite Games {% endblock %}
 
-        img{
-            width: 150px;
-            height: 150px;
+{% block content  %}
+        <h1 class="h1">My favorite games list:</h1>
 
-        }
-    </style>
-    </head>
+        <div class="games-con ">
+            {% for game in games %}
 
-    <body>
-        
-        <div class="fava_games_view">
-          <h1> My favories Games </h1>
-          <br>
-            <p>1.GTA V</p>
-            <img src="https://www.tech-wd.com/wd/wp-content/uploads/2013/10/GTA-V-main.jpg" alt=" game1"/>
-            <br>
-            <p>2.Project Makeover </p>
-            <img src="https://static.wikia.nocookie.net/projectmakeover/images/0/08/Site-background-dark/revision/latest?cb=20220918113300" alt="game2"/>
-             <br>
-             <p>3.bowling</p>
-            <img src="https://www.cbc.ca/kids/images/classicbowling_thumb.jpg" alt="game3"/>
-            <br>
-            {{gemes}}
+                <div class="game-card">
+                    <img  src="{{game.image}}" />
+                    <div class="game_title">
+                        <h4>{{ game.title }}</h4>
+                    </div>
+                    
+                </div>
+                
+
+            {% endfor %}
         </div>
 
-    </body>
-</html>
+{% endblock %}
+

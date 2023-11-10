@@ -1,70 +1,12 @@
-<!DOCTYPE html>
-<html>
-<header>
-    <style>
+{% extends 'main/base.html' %}
 
-    .box1 {
-        margin-top: 60px;
-        margin-left: 150px;
-        margin-right: 150px;
-        box-shadow: 5px 5px 5px 5px gray;
-    }
-    #font{
-        font-family: 'Ubuntu', sans-serif;
-        margin-left: 10px;
-
-    }
-    #rating-color{
-        color: gray;
-    }
-
-   img {
-
-  border-radius: 8px;
-  width: 1010px;
-  height: 300px;
-  margin-left: 10px;
-  margin-right: 20px;
-}
-
- li {
-  display:inline-block;
-  margin-left:100px; 
-  font-size:15px;}
-
- p {
-        margin-left: 15px;   
-    }
-
-    h3{
-
-        margin-left:110px;
-        
-    }
-    
-    .box {
-
-    margin-left: 0px;
-    margin-right: 100px;
-
-}
-   a{
-    margin: 20px;
-}
-.car {
-  display: inline-block;
-
-}
-</style>
-</header>
-<body>
-
+{% block content %}
 <div class = "box1">
     <br>
     <h1 id = "font">RentalCars.com: Car Rentals - Special Offers Online</h1>
     <br>
     <p id = "rating-color">Rating: 5/5⭐</p>
-    <img src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" alt="car" />
+    <img class="cars-image"  src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" alt="car" />
     <p>Compare The Biggest Car Rental Brands & Book Online in a Few Simple Steps. We Speak Your Language. No Credit Card Fees. Unbeatable Prices. Types: Economy , Mini, Compact, People carrier,Intermediate, Premium, 4x4, Estate, SUV, Convertible.</p>
     <a href="https://www.iyelo.com/ar/home/index">Learn More..</a>
     <br><br>
@@ -83,5 +25,5 @@
         <li><a href="/favs/games/"> Favorite games </a></li>
     </ul>
 </div> 
-</body>
-</html>
+
+{% endblock %}

@@ -1,31 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-   <title> Today</title>
-  <style>
+{% extends 'main/base.html' %}
 
-    h1{
-                border-style: double;
-                border-radius: 5px;
-                font-family: 'Ubuntu', sans-serif;
-                margin: 50px 40px 20px 10px;
-                background-color: rgb(206, 165, 197) ;
-                color: rgb(63, 8, 63);
-                text-align: center;
-            }
-       
-        
-        </style> 
-</head>
+{% block title %} Today {% endblock%}
+    
 
 
-<body>
+{% block content %}
+  
 
+  
   <div>
     {{date}}
-    <h1>Today's date is: </h1>
+    <h1 class=" h1">Today's date is: </h1>
   </div>
-
-</body>
-
-</html>
+ 
+  {% endblock %}

@@ -1,0 +1,62 @@
+
+
+.h1{
+    border-style: double;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 50px 40px 20px 10px;
+    background-color: rgb(206, 165, 197) ;
+    color: rgb(63, 8, 63);
+    text-align: center;
+}
+
+.p{
+    color: rgb(43, 116, 226);
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+
+}
+
+.games-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    width: 20vw;
+    background-color: rgb(240, 240, 240);
+}
+
+.game_title {
+    padding: 5px;
+}
+
+
+
+nav {
+    background-color: rgb(219, 154, 165);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: 'ubuntu', sans-serif;
+}
