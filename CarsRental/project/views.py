@@ -23,26 +23,17 @@ def password_generator_view(request: HttpRequest):
 def fav_games_view(request: HttpRequest):
 
     fav_games = [
-        {
-            "title" : "League of Legends",
-            "image" : "/static/image/game1.jpg"
-        },
-        {
-            "title" : "Overwatch",
-            "image" : "/static/image/game2.png"
-        },
+        
+       
         {
             "title" : "Crash Bandicoot",
             "image" : "/static/image/game3.jpg"
         },
 
+        
         {
-            "title" : "Overwatch",
-            "image" : "/static/image/game2.png"
-        },
-        {
-            "title" : "Crash Bandicoot",
-            "image" : "/static/image/game3.jpg"
+            "title" : "clach of clans",
+            "image" : "/static/image/game4.jpg"
         },
     ]
 
