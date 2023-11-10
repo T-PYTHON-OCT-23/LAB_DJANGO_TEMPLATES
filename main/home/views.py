@@ -3,6 +3,8 @@ from django.http import HttpRequest, HttpResponse
 from datetime import *
 from django.shortcuts import render
 from django.utils.crypto import get_random_string
+from django.shortcuts import resolve_url
+
 
 # Create your views here.
 

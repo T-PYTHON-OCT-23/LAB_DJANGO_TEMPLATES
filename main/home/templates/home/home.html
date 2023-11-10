@@ -1,66 +1,20 @@
-<!DOCTYPE html>
-<html>
-<header>
-<title>RentalCars</title>
+{% extends 'home/base.html' %}
+{% load static %}
 
-<!--<link rel="stylesheet" href="styles.css">-->
-<style>
-    body {
-    max-width: 1000px;
-    margin:auto;
-    background: white;
-    padding: 0px;
-    width: 1000px; 
- }
-  
-.content {
-    margin:  auto;
-    padding: 10px 30px;
-    border: 4px  white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 950px;
-    border-bottom-width: 20px;
-    box-shadow: 0 4px 8px #c4c2c2;
-    font-family: Ubuntu , Arial;
-  }
+{% block title %} CaresRental {% endblock %}
 
-img {
-    width: 925px ;  
-    border-radius: 10px; 
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+{% block content %}
 
-}
-
-
-</style>
-</header>
-
-<body>
-<div class="content">
-
-<!--style='box-shadow: 10px 10px 5px grey;'-->
-
- <h1> CarsRental.com - specal offers online </h1>
-<p id="star"> rating: 5/5 </p> 
-
-<img src="https://hips.hearstapps.com/hmg-prod/images/10best-cars-group-cropped-1542126037.jpg" />
-<p> A car rental, hire car or car hire agency is a company that rents automobiles for short periods of time to the public, generally ranging from a few hours to a few weeks.
- It is often organized with numerous local branches (which allow a user to return a vehicle to a different location), and primarily located near airports or busy city areas and often complemented by a website allowing online reservations.</p>
-<a href="https://en.wikipedia.org/wiki/Car_rental">Learn more..</a>  
-
-</div>
 <div>
+  <h1> CarsRental.com - specal offers online </h1>
 
-<h3>our services:</h3> 
-<p>
-<a href="http://127.0.0.1:8000/">Home</a> 
-  <a href="http://127.0.0.1:8000/today/">Today</a> 
-  <a href="http://127.0.0.1:8000/password/" >Password Gentator</a> 
-  <a href="http://127.0.0.1:8000/fav_games/">Favorite games</a> </p>
+  <h4 > Rating: 5/5 <span class="star">★</span></h4> 
+  
+  <img class="cars" src="/static/imges/cars.jpg" />
+
+  <p> A car rental, hire car or car hire agency is a company that rents automobiles for short periods of time to the public, generally ranging from a few hours to a few weeks.
+  It is often organized with numerous local branches (which allow a user to return a vehicle to a different location), and primarily located near airports or busy city areas and often complemented by a website allowing online reservations  <a href="https://en.wikipedia.org/wiki/Car_rental"> Learn more...</a>  
+</p>
 </div>
 
-</body>
-</html>
+{% endblock %}

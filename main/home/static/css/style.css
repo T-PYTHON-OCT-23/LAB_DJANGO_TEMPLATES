@@ -1,0 +1,87 @@
+.body-style {
+background-color: aliceblue;
+  width: 1000px; 
+  height: 1000px;
+  margin:auto;
+  border: 1px  ;
+  box-shadow: 0 4px 8px #c4c2c2;
+  font-family: Ubuntu , Arial;
+}
+
+nav {
+  background-color:rgb(222, 239, 255);
+  padding: 10px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:center;
+  gap:25px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo {
+  width: 60px
+}
+
+.star {
+  color: yellow;
+  font-size: 2rem;
+}
+
+.content {
+    margin:  auto;
+    padding: 10px 30px;
+    border: 4px  white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 950px;
+    border-bottom-width: 20px;
+    box-shadow: 0 4px 8px #c4c2c2;
+    font-family: Ubuntu , Arial;
+  }
+
+.cars {
+    object-fit:cover;
+    width: 1000px ;  
+    border-radius: 10px; 
+    position: relative;
+    height: 400px; 
+}
+
+.fav_games {
+  font-size:large; 
+  color:blue;
+}
+
+.fav_games img {
+  width: 120px ;
+  height: 120px;
+  border: lightgrey;
+}
+
+
+.content {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 1px;
+}
+
+p{
+  font-family: u;
+  color:darkblue;
+  font-size: x-large;
+}
+
+
+footer{
+  text-align: center;
+  border-top: 10px rgb(250, 242, 242) ;
+  padding-top: 10px;
+  margin-top:40px;
+}

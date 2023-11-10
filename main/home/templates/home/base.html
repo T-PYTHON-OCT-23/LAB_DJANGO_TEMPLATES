@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}  {% endblock %} </title>
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</header>
+
+<body>
+    <div class="body-style">
+    <nav>
+        <img class="logo" src="/static/imges/logo.png" />
+
+            <div class="nav">
+                <a href="/">Home</a>
+                <a href="{% url 'home:today_view' %}">Today</a>
+                <a href="{% url 'home:password_view' %}">Password Generator</a>
+                <a href="{% url 'home:games_view' %}">Favorite Games</a>
+            </div>
+    </nav>
+
+    {% block content %}
+
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+    <div>
+        <footer>
+        <h5>Cars Rental Riyadh, SA , 2024 All rights reserved</h5>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

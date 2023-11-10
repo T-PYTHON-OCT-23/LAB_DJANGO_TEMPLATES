@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html>
-<header>
-    <title>Today</title>
-</header>
+{% extends 'home/base.html' %}
 
-<body>
-<p style="font-size: x-large; color:blueviolet"> Date of the day is</p>
-<p style="font-size: large; ">{{today}}</p>
 
-</body>
-</html>
+{% block title %} Date of the day {% endblock %}
+
+{% block content  %}
+
+<div>
+<p > Date of the day is</p>
+<p>{{today}}</p>
+
+</div>
+{% endblock %}
