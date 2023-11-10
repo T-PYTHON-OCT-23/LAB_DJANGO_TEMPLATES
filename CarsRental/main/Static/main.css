@@ -108,3 +108,33 @@ title {
     transform: scale(0.9, 0.9);
     box-shadow: 1px 1px 25px 3px rgb(158, 157, 157, 5), -5px -5px 30px 3px rgb(129, 129, 129, 5);
 }
+
+
+nav {
+    background-color: rgb(247, 177, 252);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+}
+  .logo {
+    width: 35px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+footer {
+    border-top: 1px solid rgb(247, 177, 252);
+    text-align: center;
+    font-family: 'ubuntu', sans-serif;
+    padding-top: 15px;
+    margin-top:40px;
+}
