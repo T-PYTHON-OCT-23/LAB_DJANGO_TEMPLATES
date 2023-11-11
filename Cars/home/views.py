@@ -4,9 +4,7 @@ from datetime import *
 from django.utils.crypto import get_random_string
 
 # Create your views here.
-
 def home_view(request : HttpRequest):
-
     return render(request,"home/homepage.html")
 
 
@@ -23,9 +21,4 @@ def random_password_view(request :HttpRequest):
 
 
 def  favorite_games_view(request :HttpRequest):
-    favorite_games ={
-        "game1":"Tennis",
-        "game2":"Bowling",
-        "game3":"Boxing"
-    }
-    return render(request, 'home/games.html', favorite_games)
+    return render(request, 'home/games.html')

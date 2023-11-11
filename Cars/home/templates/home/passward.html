@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <header>
-        <title>Generated Password Page</title>
-    </header>
-    <body>
-        <h1>Random Password Generator : </h1> 
-         {{password}}
-    </body>
-</html>
+{% extends 'home/base.html' %}
+{% load static %}
 
+{% block title %} Generated Password Page {% endblock %}
+
+{% block content %}
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <h1>Random Password Generator : </h1> 
+    <h6 class="password">{{ password }}</h6>
+
+{% endblock %}

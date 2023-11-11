@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <header>
-        <title>ToDay Page</title>
-    </header>
-    <body>
-        <h1>Date of Today</h1>
-        
-        {{today}}
-        
-    </body>
-</html>
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %} ToDay Page {% endblock %}
+
+{% block content %}
+<link href="/static/css/main.css" rel="stylesheet" />
+<h1>Date of Today : </h1> 
+<h6 class="password">{{today}}</h6>
+{% endblock %}

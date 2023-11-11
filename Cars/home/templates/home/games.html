@@ -1,14 +1,37 @@
-<!DOCTYPE html>
-<html>
-    <header>
-        <title></title>
-    </header>
-    <body>
-        <h1>My Favorate Gamed: </h1>
-        <p>{{game1}}</p>
-        <p>{{game2}}</p>
-        <p>{{game3}}</p>
+{% extends 'home/base.html' %}
+{% load static %}
 
-        
-    </body>
-</html>
+{% block title %} Favorate Games Page {% endblock %}
+
+{% block content %}
+
+        <link href="/static/css/main.css" rel="stylesheet" /> 
+            <!--Favorite Games Page-->
+    <section>
+        <h1 class="Favorite">My Favorite Games</h1>
+        <div class="row">
+            <div class="card">
+                <img src="/static/images//adbc85c6aded20907344a75eb5d5957b.jpg" alt="Avatar">
+                <div class="container">
+                <h4><b>TENNIS</b></h4>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/static/images/cdf8e45e45b8460d05879219fee34547.jpg" alt="Avatar">
+                <div class="container">
+                <h4><b>FOOTBALL</b></h4>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/static/images/fff1a8c9d5ad0d715a47f7bbc004a5f2.jpg" alt="Avatar">
+                <div class="container">
+                <h4><b>PADEL</b></h4>
+                </div>
+            </div>
+            </div>
+    </section>
+    
+
+{% endblock %}

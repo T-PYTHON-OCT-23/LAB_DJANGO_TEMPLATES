@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+       <!--nav-->
+       <nav>
+        <img src="static/images/Games logo.png" alt="">
+        <ul class="nav-links">
+            <li><a href="{% url 'home:home_view' %}">Home</a></li>
+            <li><a href="{% url 'home:today_page_view' %}">Today</a></li>
+            <li><a href="{% url 'home:random_password_view' %}">Passward Generation</a></li>
+            <li><a href="{% url 'home:favorite_games_view' %}">Favorite Games</a></li>
+        </ul>
+    </nav>
+       {% block content %}
+
+       {% endblock %}
+
+
+    </div>
+</body>
+</html>
