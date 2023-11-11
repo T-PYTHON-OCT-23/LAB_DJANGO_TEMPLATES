@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}  {% endblock %}</title>
+    <link href="/static/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+<div>
+    <nav>
+        <img class="logo" src="/static/images/logo-game.png" />
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="{% url 'main:today' %}">Today</a></a>
+            <a href="{% url 'main:pass' %}">Password Generato</a>
+            <a href="{% url 'main:favorite' %}">Favorite Games</a>
+        </div>
+    </nav>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <footer>
+     <h5> 2024 </h5>
+    </footer>
+
+</div>
+</body>
+</html>

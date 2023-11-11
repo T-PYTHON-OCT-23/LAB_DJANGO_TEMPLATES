@@ -1,4 +1,4 @@
-from django.shortcuts import render 
+from django.shortcuts import render ,resolve_url
 from django.http import HttpRequest, HttpResponse 
 from django.utils.crypto import get_random_string
 import datetime
@@ -40,3 +40,4 @@ def favorite_games(request:HttpRequest):
         "call_website": Call_of,
     }
     return render(request, "main/favorite.html",content)
+

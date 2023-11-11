@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Password</title>
-    </head>
+{% extends 'main/base.html' %}
+
+{% block title %} Password generator {% endblock%}
+    
+
+
+{% block content %}
+
+
 
     <body>
+        <h1>Your generated password is:</h1>
         <p>{{Password}}</p>
     </body>
 </html>
+{% endblock %}

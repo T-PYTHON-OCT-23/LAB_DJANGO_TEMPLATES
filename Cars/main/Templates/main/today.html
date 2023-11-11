@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Today</title>
-    <style>
-        h1{
-            color: saddlebrown;
-        }
-        .d{
-            color: lightslategrey;
-            
+{% extends 'main/base.html' %}
 
-        }
-    </style>
 
-</head>
+{% block title %} Today {% endblock %}
 
-<body>
+{% block content  %}
+
     <h1>Today:</h1>
    
    <h3> {{today}} {{date}}</h3>
-</body>
-</html>
+
+   {% endblock %}
