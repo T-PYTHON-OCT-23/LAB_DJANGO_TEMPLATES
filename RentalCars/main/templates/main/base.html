@@ -1,0 +1,35 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="{%static 'css/main.css'%}" rel="stylesheet"> 
+    <title>{% block title%}{% endblock%}</title>
+</head>
+<body>
+    <div>
+    
+    <nav>
+         <img class="logo"src="{% static 'images/logo.jpg' %}">
+        <div class="nav-links">
+        <a href="{% url 'main:home_page' %}">Home</a>
+        <a href="{% url 'main:today_date' %}">Today</a>
+        <a href="{% url 'main:password_generator'%}">Password Generator</a>
+        <a href="{% url 'main:favs_games'%}">Favorite Games</a>
+        </div>
+    </nav>
+    {% block content%}
+    {% endblock%}    
+    <div class="foot">
+    <footer>
+        <h5>Aseel Alshammrani company , 2023 All rights reserved</h5>
+    </footer>
+    </div>
+
+    </div>
+</body>
+</html>
