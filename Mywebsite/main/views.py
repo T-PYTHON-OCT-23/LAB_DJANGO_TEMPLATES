@@ -2,7 +2,8 @@ import secrets
 import string
 import random
 import requests
-from django.shortcuts import render
+from django.shortcuts import render 
+from django.http import HttpResponse, HttpResponseRedirect
 import datetime
 
 def password(request):
@@ -54,3 +55,13 @@ def today(request):
 
 def home(request):
     return render(request,'main/home.html')
+
+def about(request):
+    return render(request,'main/about.html')
+
+def image(request):
+    # Set cookies
+    response = HttpResponse()
+    response.set_cookie('image', 'big')
+    return HttpResponseRedirect('/')    
+

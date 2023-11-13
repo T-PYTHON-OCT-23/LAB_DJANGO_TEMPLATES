@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.home),
     path('random/password/',views.password,name='password'),
     path('favs/games/',views.games),
-    path('today/',views.today)
-
+    path('today/',views.today),
+    path('about/',views.about),
+    path('image/',views.image,name='image')
 ]

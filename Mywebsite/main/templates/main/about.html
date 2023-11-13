@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        {% if request.COOKIES.image == "big" %}
+            img {
+                width: 500px; /* Set the width for the "big" image */
+            }
+        {% endif %}
+    </style>
+</head>
+<body>
+
+    <img src="/static/main/header.png" alt="header">
+    
+    <form action="/image" method="post">
+        {% if request.COOKIES.image == "big" %}
+            <button name="image" value="small">Small</button>
+        {% else %}
+            <button name="image" value="big">Big</button>
+        {% endif %}
+    </form>
+
+</body>
+</html>
