@@ -1,0 +1,21 @@
+
+{% extends 'main/base.html' %}
+{% block title %}About{% endblock%}
+
+{% block content %}
+<div {% if "size_about" in request.COOKIES and request.COOKIES.size_about == "biggest" %} class="big_about"
+{% elif  "size_about" in request.COOKIES and request.COOKIES.size_about == "smallest" %} class="small_about" 
+{% endif %}>
+
+    <img src="/static/images/IMG_1726.jpg" alt="khamis"  width="50%">
+    <p>this is a picture of me !</p>
+    <p>make this pic and text bigger or smaller as you like by using the buttons bellow</p>
+
+</div>
+<a href="{% url 'big_about' %}">big</a>
+<a href="{% url 'small_about' %}">small</a>
+
+
+{% endblock %}
+
+

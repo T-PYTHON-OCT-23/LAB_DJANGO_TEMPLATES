@@ -10,10 +10,8 @@ nav {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap:15px;
-    justify-content: left; 
 }
 .games-container {
     padding: 1em;
@@ -51,3 +49,26 @@ nav {
     object-fit:cover;
     border-radius: 20px; 
 }
+
+.display-zoom {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
+}
+.big {
+    font-size:1.25rem;
+}
+.small {
+    font-size: 0.75rem;
+}
+
+.big_about {
+    width: 30%;
+    font-size:1.5rem;
+}
+.small_about {
+    width: 10%;
+    font-size: 0.75rem;
+}
+
