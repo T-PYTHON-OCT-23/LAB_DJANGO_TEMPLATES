@@ -7,14 +7,14 @@ import string
 
 
 def home(request: HttpRequest):
-    return render(request, 'cars/home.html')
+    return render(request, 'main/home.html')
 
 
 def day(request: HttpRequest):
     context = {
         "today": datetime.today()
     }
-    return render(request, 'cars/day.html', context)
+    return render(request, 'main/day.html', context)
 
 
 def password(request: HttpRequest):
@@ -24,8 +24,8 @@ def password(request: HttpRequest):
     context = {
         "pass": password
     }
-    return render(request, 'cars/password.html', context)
+    return render(request, 'main/password.html', context)
 
 
 def favGame(request: HttpRequest):
-    return render(request, 'cars/favGame.html')
+    return render(request, 'main/favGame.html')
